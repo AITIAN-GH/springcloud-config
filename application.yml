@@ -1,13 +1,15 @@
 spring:
  profiles: 
   active: dev
+  
 ---
 spring:
-  profiles: dev
-server:
-  port: 1111
+ profiles: dev
+ application:
+  name: springcloud-config-dev
+  
 ---
 spring:
-  profiles: test
-server:
-  port: 2222
+ profiles: test
+ application:
+  name: springcloud-config-test
