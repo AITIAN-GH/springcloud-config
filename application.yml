@@ -1,5 +1,13 @@
-server:
-  port: 3344
 spring:
-  application:
-    name: springcloud-config-server
+ profiles: 
+  active: dev
+---
+spring:
+  profiles: dev
+server:
+  port: 1111
+---
+spring:
+  profiles: test
+server:
+  port: 2222
